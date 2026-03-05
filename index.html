@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Vibes 🌤️</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background Animation -->
+  <div class="background-animation"></div>
+
+  <div class="weather-container">
+    <h1>🌦 Weather Vibes</h1>
+
+    <!-- User Input for City Name -->
+    <input type="text" id="cityInput" placeholder="Enter city name" />
+
+    <!-- Get Weather Button -->
+    <button onclick="getWeather()">🔍 Get Weather</button>
+    
+    <!-- Location Button -->
+    <button onclick="getMyLocation()">📍 Use My Location</button>
+
+    <!-- Voice Search Button -->
+    <button onclick="voiceSearch()">🎙️ Speak</button>
+
+    <!-- Display Weather Info -->
+    <div id="weatherInfo" class="info"></div>
+
+    <!-- Dark Mode Toggle -->
+    <label class="switch">
+      <input type="checkbox" onchange="toggleTheme()" />
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
